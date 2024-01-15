@@ -1,0 +1,9 @@
+# lines with '#' are omitted
+# do not leave blank lines
+#
+#
+# Name1; name1_example@email.address
+# Name2; name2_example@email.address
+# Name3; name3_example@email.address
+# Name4; name4_example@email.address
+# Name5; name5_example@email.address
