@@ -21,9 +21,9 @@ maecenas accumsan lacus vel facilisis. <br>
 <br>
 {1} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
-maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
-maecenas accumsan lacus vel facilisis. <br>
+maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices 
+gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <br>
 <br>
 Sincerely, <br>
 Your Name <br>
