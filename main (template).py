@@ -72,38 +72,6 @@ recipients = [
 ################################################# MAIN #################################################
 
 def main():
-
-    for r in recipients:
-        # personalizing the email body
-        body_new = body.format(name=r['name']) 
-        email_receiver = r['email']
-
-        # creating the email
-        em = EmailMessage()
-        em['From'] = email_sender
-        em['To'] = email_receiver
-        em['Subject'] = subject
-        em.set_content(body_new, 'html')
-
-        # add an attachment
-        with open(attachment_file_path, 'rb') as attachment_file:
-            attachment_data = attachment_file.read()
-            em.add_attachment(attachment_data, maintype='image', subtype='png', filename='Cat Image')
-            
-
-        context = ssl.create_default_context()
-
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
-            smtp.login(email_sender, email_password)
-            smtp.sendmail(email_sender, email_receiver, em.as_string())
-
-        # checking for one email is sent
-        print(r['name'], 'done')
-
-
-if __name__ == '__main__':
-    main()
-def main():
     for person in recipients:
         # setting up the email
         body_formatted = body.format(name = person["name"]) 
@@ -119,8 +87,7 @@ def main():
         em["To"] = email_receiver
         em["Subject"] = subject
         em.set_content(body_formatted, "html")
-
-        #sending the email
+        
         if attachment_path != None: 
             with open(attachment_path, "rb") as attachment_file:
                 attachment_data = attachment_file.read()
@@ -129,12 +96,12 @@ def main():
 
         context = ssl.create_default_context()
 
+        #sending the email
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as smtp:
             smtp.login(email_sender, email_password)
             smtp.sendmail(email_sender, email_receiver, em.as_string())
 
         print(person["name"], "done")
-
 
 if __name__ == "__main__":
     main()
